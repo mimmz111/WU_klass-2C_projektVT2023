@@ -3,11 +3,13 @@
     padding: 0%;
 }
 
-
-
 header{
-    background: red;
+    background: #485a27;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107%;
 }
 
 #listerner-left{
@@ -19,6 +21,9 @@ header{
     rotate: 90deg;
 
 }
+#place-for-sliding-img{
+    width: 93%;
+}
 
 #listerner-right{
     height: 20px;
@@ -27,4 +32,16 @@ header{
     top:-145px;
     left: 325px;
     rotate: -90deg;
+}
+
+#first-section-main-page{
+
+}
+
+#tayor-article{
+
+}
+
+#taylor-article img{
+    height: 100px;
 }
