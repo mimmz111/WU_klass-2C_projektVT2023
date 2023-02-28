@@ -1,15 +1,31 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header{
     background: #485a27;
     height: 80px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    width: 107%;
+    width: 100%;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "br bu";
+}
+
+#first-item-in-header{
+    grid-area: br;
+
+    
 }
 
 #listerner-left{
@@ -19,10 +35,14 @@ header{
     top:-145px;
     left: 25px;
     rotate: 90deg;
-
 }
+
 #place-for-sliding-img{
-    width: 93%;
+    width: 100%;
+}
+
+#slide_img{
+    width: 100%;
 }
 
 #listerner-right{
@@ -35,13 +55,120 @@ header{
 }
 
 #first-section-main-page{
+    width: 100%;
 
 }
 
-#tayor-article{
+#taylor-article{
+    display: flex;
+    margin: 2px;
 
 }
 
 #taylor-article img{
     height: 100px;
+    margin: 10px;
+}
+
+.line{
+    background: #485a27;
+    width: 100%;
+    height: 3px;
+}
+
+#allergy-article{
+    margin: 2px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: 
+    ". he"
+    "im te"
+    ;
+}
+
+#allergy-article img{
+    height: 100px;
+    grid-area: im;
+    margin: 10px;
+}
+
+#he{
+    grid-area: he;
+    text-align: end;
+}
+
+#te{
+    grid-area: te;
+
+}
+
+#second-item-in-header{
+    margin-left: 100px;
+    grid-area: bu;
+}
+
+#link-list a{
+    text-decoration: none;
+    color: rgb(84, 118, 174);
+    letter-spacing: 0.1875rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+#burger div{
+    width: 29px;
+    height: 4px;
+    background-color: cadetblue;
+    margin: 5px;
+    border-radius: 20%;
+    transition: all 0.5s;
+}
+#link-list{
+    background-color:darkkhaki;
+    height: 400px;
+    width: 100px;
+    position: absolute;
+    top: -400px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+#burger{
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.link-list-visible{
+    transform: translateY(480px);
+}
+
+.burger-x #line2{
+    opacity: 0;
+}
+
+.burger-x #line1{
+    transform: rotate(-45deg) translate(-6.5px, 6px);
+}
+
+.burger-x #line3{
+    transform: rotate(45deg) translate(-6.5px, -6px);
+}
+
+#grid-wrapper{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows: 100px 400px 400px 400px 400px 80px;
+    grid-template-areas: 
+    "he na"
+    "s1 s1"
+    "s2 s2"
+    "s3 s3"
+    "s4 s4"
+    "fo fo";
 }

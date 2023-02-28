@@ -1,3 +1,18 @@
+function togglemenu(){
+    document.getElementById('link-list').classList.toggle('link-list-visible')
+    document.getElementById('burger').classList.toggle('burger-x')
+
+
+}
+document.getElementById('burger').addEventListener('click', togglemenu)
+
+
+
+
+
+
+
+
 const SlideImg = document.getElementById("slide1")
 
 document.getElementById("listerner-right").addEventListener("click",displayDate)
