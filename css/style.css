@@ -7,6 +7,7 @@
 body{
     width: 100%;
     overflow-x: hidden;
+    background-color: rgb(199, 168, 130);
 }
 
 header{
@@ -61,7 +62,7 @@ header{
 
 #taylor-article{
     display: flex;
-    margin: 2px;
+    margin: 10px;
 
 }
 
@@ -72,12 +73,15 @@ header{
 
 .line{
     background: #485a27;
-    width: 100%;
+    width: 90%;
     height: 3px;
+    position: relative;
+    left: 10px;
+    margin: 10px;
 }
 
 #allergy-article{
-    margin: 2px;
+    margin: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 0.2fr 1fr;
@@ -100,11 +104,9 @@ header{
 
 #te{
     grid-area: te;
-
 }
 
 #second-item-in-header{
-    margin-left: 100px;
     grid-area: bu;
 }
 
@@ -112,8 +114,6 @@ header{
     text-decoration: none;
     color: rgb(84, 118, 174);
     letter-spacing: 0.1875rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: uppercase;
 }
 
 #burger div{
@@ -125,9 +125,9 @@ header{
     transition: all 0.5s;
 }
 #link-list{
-    background-color:darkkhaki;
+    background-color:#485a27;
     height: 400px;
-    width: 100px;
+    width: 150px;
     position: absolute;
     top: -400px;
     right: 0px;
@@ -137,6 +137,11 @@ header{
     align-items: center;
     list-style: none;
     transition: all 0.5s;
+}
+
+#link-list li{
+    margin: 15px;
+    text-align: center;
 }
 
 #burger{
@@ -160,15 +165,3 @@ header{
     transform: rotate(45deg) translate(-6.5px, -6px);
 }
 
-#grid-wrapper{
-    display: grid;
-    grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 400px 400px 400px 400px 80px;
-    grid-template-areas: 
-    "he na"
-    "s1 s1"
-    "s2 s2"
-    "s3 s3"
-    "s4 s4"
-    "fo fo";
-}
