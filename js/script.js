@@ -1,3 +1,12 @@
+function togglemenu(){
+    document.getElementById('link-list').classList.toggle('link-list-visible')
+    document.getElementById('burger').classList.toggle('burger-x')
+
+
+}
+document.getElementById('burger').addEventListener('click', togglemenu)
+
+
 img_src_array = ["img/slide/0_slide1.jpg", "img/slide/1_slide2.jpg"]
 
 function changePhotoRight() {
@@ -24,10 +33,6 @@ document.getElementById('listerner-left').addEventListener("click", changePhotoL
 
 document.getElementById('listerner-right').addEventListener("click", changePhotoRight)
 
-function togglemenu(){
-    document.getElementById('link-list').classList.toggle('link-list-visible')
-    document.getElementById('burger').classList.toggle('burger-x')
 
 
-}
-document.getElementById('burger').addEventListener('click', togglemenu)
+

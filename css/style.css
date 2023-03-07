@@ -188,7 +188,7 @@ header{
 #pi{
     grid-area: pi;
     width: 100%;
-    
+    margin-right: 20px;
 }
 
 #it{
@@ -202,21 +202,20 @@ header{
 #li{
     grid-area: li;
     list-style:none;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 #vi{
     grid-area: vi;
     text-decoration: underline;
     margin-bottom: 15px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 #french-menu{
-    margin-top: 25px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 0.2fr 4fr;
+    grid-template-rows: 1fr 0.2fr 2fr;
     grid-template-areas: 
     "fm fr"
     "ve ft"
@@ -227,6 +226,7 @@ header{
 #fm{
     grid-area: fm;
     width: 100%;
+    margin-left: 20px;
 }
 
 #fr{
@@ -239,12 +239,79 @@ header{
 #ve{
     grid-area: ve;
     text-decoration: underline;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 3px;
 }
 
 #ft{
     grid-area: ft;
+    text-align: center;
+    padding: 3px;
 }
 
 #fl{
     grid-area: fl;
+    list-style: none;
+    margin-left: 20px;
 }
+
+#vietnames-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr 1fr;
+    grid-template-areas: 
+    "hv hv hv"
+    "et tv tr"
+    ". wo ."
+    "l1 . l2"
+
+    
+    ;
+}
+
+#headline-viet{
+    grid-area: hv;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#img1-viet{
+    grid-area: et;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#img2-viet{
+    grid-area: tv;
+    height: 100px;
+    margin-left: 10px;
+
+}
+
+#img3-viet{
+    grid-area: tr;
+    height: 100px;
+    margin-right: 20px;
+
+}
+
+#we-offer{
+    grid-area: wo;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#list1-viet{
+    grid-area: l1;
+    list-style: none;
+    text-align: end;
+}
+
+#list2-viet{
+    grid-area: l2;
+    list-style: none;
+    text-align: start;
+}
+
