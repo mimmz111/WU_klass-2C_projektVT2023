@@ -7,7 +7,7 @@
 body{
     width: 100%;
     overflow-x: hidden;
-    background-color: rgb(199, 168, 130);
+    background-color: rgb(237, 209, 175);
 }
 
 header{
@@ -165,3 +165,86 @@ header{
     transform: rotate(45deg) translate(-6.5px, -6px);
 }
 
+#starting-section-menu{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#italien-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0.4fr 0.2fr 1fr;
+    grid-template-areas: 
+    "it it"
+    "vi pi"
+    "li pi"
+    ;
+}
+
+#pi{
+    grid-area: pi;
+    width: 100%;
+    
+}
+
+#it{
+    grid-area: it;
+    padding-bottom:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#li{
+    grid-area: li;
+    list-style:none;
+    margin-left: 30px;
+}
+
+#vi{
+    grid-area: vi;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+#french-menu{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 0.2fr 4fr;
+    grid-template-areas: 
+    "fm fr"
+    "ve ft"
+    "fl ft"
+    ;
+}
+
+#fm{
+    grid-area: fm;
+    width: 100%;
+}
+
+#fr{
+    grid-area: fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ve{
+    grid-area: ve;
+    text-decoration: underline;
+}
+
+#ft{
+    grid-area: ft;
+}
+
+#fl{
+    grid-area: fl;
+}
