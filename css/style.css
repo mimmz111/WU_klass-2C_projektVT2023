@@ -7,7 +7,7 @@
 body{
     width: 100%;
     overflow-x: hidden;
-    background-color: rgb(237, 209, 175);
+    background-color: rgb(253, 209, 216);
 }
 
 header{
@@ -20,13 +20,13 @@ header{
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "br bu";
+    "br bu"
+    ;
 }
 
 #first-item-in-header{
     grid-area: br;
-
-    
+    margin-left: 15px;
 }
 
 #listerner-left{
@@ -39,7 +39,7 @@ header{
 }
 
 #place-for-sliding-img{
-    width: 100%;
+    margin: 10px;
 }
 
 #slide_img{
@@ -57,18 +57,19 @@ header{
 
 #first-section-main-page{
     width: 100%;
-
 }
 
 #taylor-article{
     display: flex;
-    margin: 10px;
-
+    text-align: justify;
+    margin-left: 20px;
 }
 
 #taylor-article img{
     height: 100px;
-    margin: 10px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-left: 20px;
 }
 
 .line{
@@ -81,9 +82,8 @@ header{
 }
 
 #allergy-article{
-    margin: 10px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 0.2fr 1fr;
     grid-template-areas: 
     ". he"
@@ -94,16 +94,20 @@ header{
 #allergy-article img{
     height: 100px;
     grid-area: im;
-    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #he{
     grid-area: he;
     text-align: end;
+    margin-right: 20px;
 }
 
 #te{
     grid-area: te;
+    margin-right: 20px;
+    text-align: justify;
 }
 
 #second-item-in-header{
@@ -177,7 +181,7 @@ header{
 #italien-section{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 0.4fr 0.2fr 1fr;
+    grid-template-rows: 0.4fr 0.2fr 2fr;
     grid-template-areas: 
     "it it"
     "vi pi"
@@ -187,7 +191,7 @@ header{
 
 #pi{
     grid-area: pi;
-    width: 100%;
+    width: 90%;
     margin-right: 20px;
 }
 
@@ -258,15 +262,13 @@ header{
 
 #vietnames-menu{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 0.2fr 2fr 0.2fr 1fr;
     grid-template-areas: 
     "hv hv hv"
     "et tv tr"
     ". wo ."
     "l1 . l2"
-
-    
     ;
 }
 
@@ -278,27 +280,22 @@ header{
 
 #img1-viet{
     grid-area: et;
-    height: 100px;
-    margin-left: 20px;
+    height: 50%;
 }
 
 #img2-viet{
     grid-area: tv;
-    height: 100px;
-    margin-left: 10px;
-
+    height: 50%;
 }
 
 #img3-viet{
     grid-area: tr;
-    height: 100px;
-    margin-right: 20px;
-
+    height: 50%;
 }
 
 #we-offer{
     grid-area: wo;
-    text-decoration: underline;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -315,3 +312,39 @@ header{
     text-align: start;
 }
 
+/*
+
+#offer-line1{
+
+    background: #485a27;
+    width: 30%;
+    height: 3px;
+    position: relative;
+    left: 130px ;
+    margin-top: 9px ;
+}
+
+#offer-line2{
+
+    background: #485a27;
+    width: 30%;
+    height: 3px;
+    position: relative;
+    left: -25px ;
+    margin-top: 9px ;
+}
+*/
+
+.book-button{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(255, 219, 225);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: #485a27 solid;
+    box-shadow: 5px 5px 5px rgba(253, 181, 193, 0.796);
+    margin-left: 50px;
+}
