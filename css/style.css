@@ -39,7 +39,7 @@ header{
 }
 
 #place-for-sliding-img{
-    margin: 10px;
+    width: 100%;
 }
 
 #slide_img{
@@ -60,16 +60,31 @@ header{
 }
 
 #taylor-article{
-    display: flex;
-    text-align: justify;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: 
+    "the the"
+    "tte tim"
+    ;
+}
+
+#taylor-text{
+    grid-area: the;
     margin-left: 20px;
+}
+
+#tayler-p-tag{
+   grid-area: tte;
+   text-align: justify;
+   margin-left: 20px;
 }
 
 #taylor-article img{
     height: 100px;
     margin-right: 20px;
-    margin-top: 25px;
     margin-left: 20px;
+    grid-area: tim;
 }
 
 .line{
@@ -219,7 +234,7 @@ header{
 #french-menu{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 0.2fr 2fr;
+    grid-template-rows: 1fr 0.2fr 1fr;
     grid-template-areas: 
     "fm fr"
     "ve ft"
@@ -263,7 +278,7 @@ header{
 #vietnames-menu{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 0.2fr 2fr 0.2fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 0.2fr 1fr;
     grid-template-areas: 
     "hv hv hv"
     "et tv tr"
@@ -281,16 +296,19 @@ header{
 #img1-viet{
     grid-area: et;
     height: 50%;
+    justify-self: center;
 }
 
 #img2-viet{
     grid-area: tv;
     height: 50%;
+    justify-self: center;
 }
 
 #img3-viet{
     grid-area: tr;
     height: 50%;
+    justify-self: center;
 }
 
 #we-offer{
@@ -298,6 +316,7 @@ header{
     font-size: 20px;
     text-align: center;
     margin-bottom: 5px;
+    position: relative;
 }
 
 #list1-viet{
@@ -319,9 +338,9 @@ header{
     background: #485a27;
     width: 30%;
     height: 3px;
-    position: relative;
+    position: absolute;
     left: 130px ;
-    margin-top: 9px ;
+    bottom: -400px ;
 }
 
 #offer-line2{
@@ -329,9 +348,9 @@ header{
     background: #485a27;
     width: 30%;
     height: 3px;
-    position: relative;
+    position: absolute;
     left: -25px ;
-    margin-top: 9px ;
+    top: 9px ;
 }
 */
 
@@ -347,4 +366,58 @@ header{
     border: #485a27 solid;
     box-shadow: 5px 5px 5px rgba(253, 181, 193, 0.796);
     margin-left: 50px;
+}
+
+#section-office-meals{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "mp ho"
+    "pm in"
+    ;
+}
+
+#meals-parent{
+    grid-area: mp;
+    justify-self: center;
+    align-self: center;
+}
+
+#info{
+    grid-area: in;
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: 
+    "pn"
+    "fn"
+    ;
+}
+
+#image-place{
+    grid-area: pn;
+}
+
+#contact-info{
+    grid-area: fn;
+}
+
+
+#head-office{
+    grid-area: ho;
+    justify-self: center;
+    align-self: center;
+}
+
+#place-for-meals{
+    grid-area: pm;
+    background-color: #485a27;
+}
+
+#info{
+    grid-area: in;
+    background-color: red;
 }
