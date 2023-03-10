@@ -33,13 +33,15 @@ header{
     height: 20px;
     width: 20px;
     position: relative;
-    top:-145px;
+    top:-125px;
     left: 25px;
     rotate: 90deg;
 }
 
 #place-for-sliding-img{
-    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 #slide_img{
@@ -50,8 +52,8 @@ header{
     height: 20px;
     width: 20px;
     position: relative;
-    top:-145px;
-    left: 325px;
+    top:-125px;
+    left: 300px;
     rotate: -90deg;
 }
 
@@ -405,7 +407,6 @@ header{
     grid-area: fn;
 }
 
-
 #head-office{
     grid-area: ho;
     justify-self: center;
@@ -420,4 +421,44 @@ header{
 #info{
     grid-area: in;
     background-color: red;
+}
+
+#welcome{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#intro-text{
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#start-book{
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "tok fbb"
+    "bot fbb"
+    ;
+}
+
+#to-book{
+    grid-area: tok;
+    margin-left: 20px;
+    justify-self: center;
+}
+
+#booking-text{
+    grid-area: bot;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#first-book-button{
+    grid-area: fbb;
+    align-self: center;
+    margin-right: 20px;
 }
