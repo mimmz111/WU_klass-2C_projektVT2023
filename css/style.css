@@ -464,6 +464,8 @@ header{
     ;
 }
 
+/*
+
 #stopping-img-section{
     display: flex;
     height: 500px;
@@ -476,3 +478,101 @@ header{
     height: 97%;
     width: 100%;
 }
+
+*/
+
+#stopping-img-section{
+    margin: 40px;
+    background-image: url(/img/regular/stopping-img.jpg);
+    height: 500px;
+    width: auto;
+}
+
+#square-text{
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    margin: 40px;
+}
+
+#slogan{
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+#wedding-section{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+    "wei hw"
+    "wei wt"
+    ;
+}
+
+#head-wed{
+    grid-area: hw;
+}
+
+#wed-img{
+    grid-area: wei;
+    width: 175px;
+}
+
+#wed-txt{
+    grid-area: wt;
+}
+
+#flex-funeral{
+    display: flex;
+    margin: 20px;
+    height: 300px;
+}
+
+#flex-funeral p{
+    margin-right: 5px;
+}
+
+#short-church{
+    height: 125px;
+    width: 125px;
+}
+
+#art-funeral{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#flex-dop{
+    display: flex;
+    margin: 20px;
+    height: 325px;
+}
+
+#he-dop{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#dop-2{
+    margin-top: 25px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#dop-2 img{
+    width: 130px; 
+    margin-bottom: 22px;
+}
+
