@@ -32,8 +32,8 @@ header{
 #listerner-left{
     height: 20px;
     width: 20px;
-    position: relative;
-    top:-125px;
+    position: absolute;
+    top: 100px;
     left: 25px;
     rotate: 90deg;
 }
@@ -42,6 +42,7 @@ header{
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
+    position: relative;
 }
 
 #slide_img{
@@ -51,9 +52,10 @@ header{
 #listerner-right{
     height: 20px;
     width: 20px;
-    position: relative;
-    top:-125px;
-    left: 300px;
+    position: absolute;
+    right: 25px;
+    top: 100px;
+    
     rotate: -90deg;
 }
 
@@ -158,6 +160,7 @@ header{
     align-items: center;
     list-style: none;
     transition: all 0.5s;
+    z-index: 2;
 }
 
 #link-list li{
@@ -333,12 +336,12 @@ header{
     text-align: start;
 }
 
-/*
 
+/*
 #offer-line1{
 
     background: #485a27;
-    width: 30%;
+    width: 5px;
     height: 3px;
     position: absolute;
     left: 130px ;
@@ -355,6 +358,7 @@ header{
     top: 9px ;
 }
 */
+
 
 .book-button{
     height: 50px;
@@ -387,24 +391,16 @@ header{
     align-self: center;
 }
 
-#info{
-    grid-area: in;
-    display: grid;
-    background-color: antiquewhite;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 1fr;
-    grid-template-areas: 
-    "pn"
-    "fn"
-    ;
-}
-
 #image-place{
-    grid-area: pn;
+    height: 150px;
 }
 
 #contact-info{
-    grid-area: fn;
+    margin-top: 5px;
+}
+
+#copyright{
+    font-size: x-small;
 }
 
 #head-office{
@@ -418,9 +414,16 @@ header{
     background-color: #485a27;
 }
 
+#contact-ways{
+    text-decoration: none;
+}
+
 #info{
     grid-area: in;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #welcome{
@@ -464,35 +467,23 @@ header{
     ;
 }
 
-/*
-
-#stopping-img-section{
-    display: flex;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-}
-
-#stopping-img-img{
-    margin: 20px;
-    height: 97%;
-    width: 100%;
-}
-
-*/
-
 #stopping-img-section{
     margin: 40px;
     background-image: url(/img/regular/stopping-img.jpg);
     height: 500px;
+    padding: 40px;
     width: auto;
 }
 
 #square-text{
-    height: 200px;
+    height: 190px;
     width: 100px;
-    background-color: white;
-    margin: 40px;
+    background-color: rgb(215, 214, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
 }
 
 #slogan{
@@ -574,5 +565,25 @@ header{
 #dop-2 img{
     width: 130px; 
     margin-bottom: 22px;
+}
+
+#party-section{
+    margin: 20px;
+}
+
+#head-party{
+    text-align: center;
+}
+
+#party-section p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#party-section img{
+    width: 100%;
 }
 
