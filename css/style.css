@@ -189,7 +189,7 @@ header{
     transform: rotate(45deg) translate(-6.5px, -6px);
 }
 
-#starting-section-menu{
+.starting-section{
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -570,7 +570,7 @@ header{
 }
 
 #dop-2 img{
-    width: 130px; 
+    width: 125px; 
     margin-bottom: 22px;
 }
 
@@ -642,22 +642,91 @@ header{
 
 #flex-waiters{
     margin: 20px;
-    height: 550px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 #flex-waiters img{
-    width: 160px;
+    height: 220px;
+    width: auto;
 }
 
 #wine-img{
     background-image: url(/img/regular/wine-img.jpg);
-    height: 110px;
+    height: 100px;
     width: 100%;
     background-size: cover;
     background-position: center;
     margin-top: 50px;
     margin-bottom: 3px;
+}
+
+#margin-under{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.venue{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.text-button{
+    display: flex;
+    margin-top: 10px;
+}
+
+.book-button-venue{
+    height: 50px;
+    width: 170px;
+    background-color: rgb(255, 219, 225);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #485a27 solid;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(253, 181, 193, 0.796);
+}
+
+#text-venue1{
+    background-image: url(/img/regular/venue1.jpg);
+}
+
+.collection{
+    height: 450px;    
+    padding: 40px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline-venue{
+    background-color: rgba(253, 209, 216, 0.733);
+    height: 50px;
+    width: 150px;
+    
+}
+
+#text-venue2{
+    background-image: url(/img/regular/venue2.jpg);
+}
+
+#text-venue3{
+    background-image: url(/img/regular/venue3.jpg);
+}
+
+#text-venue4{
+    background-image: url(/img/regular/venue4.jpg);
 }
