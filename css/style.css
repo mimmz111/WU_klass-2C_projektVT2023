@@ -99,6 +99,15 @@ header{
     margin: 10px;
 }
 
+.disapear-line{
+    background: #485a27;
+    width: 90%;
+    height: 3px;
+    position: relative;
+    left: 10px;
+    margin: 10px;
+}
+
 #allergy-article{
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -736,8 +745,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
 }
 
 #text-venue2{
@@ -750,6 +757,14 @@ header{
 
 #text-venue4{
     background-image: url(/img/regular/venue4.jpg);
+}
+
+#text-venue5{
+    background-image: url(/img/regular/venue5.jpg);
+}
+
+#text-venue6{
+    background-image: url(/img/regular/venue6.jpg);
 }
 
 .footer{
@@ -814,19 +829,25 @@ header{
 
 }
 
-@media screen and (min-width:800px){ 
+@media screen and (min-width:600px){ 
 
     #main-page-media{
         display: grid;
         margin: 40px;
         height: 450px;
-        grid-template-columns: 40% 35% 35%;
+        grid-template-columns: 40% 30% 40%;
         grid-template-rows: 50% 40% 10%;
         grid-template-areas: 
-        "pfsi mpc"
-        "pfsi stb"
-        "pfsi fbbi"
+        "pfsi mpc sis"
+        "pfsi stb sis"
+        "pfsi fbbi sis"
         ;
+    }
+
+    /* HELP IT DOESNT GIVE SIS THE GRID AREA*/
+    #stopping-img-section{
+        grid-area: sis; 
+        background-color: aqua;
     }
 
     #main-page-cover{
@@ -885,6 +906,64 @@ header{
         left: 20px;
         right: 20px;
         margin: 20px;
+    }
+
+    #first-section-main-page{
+        display: flex;
+    }
+
+    .footer{
+        display: grid;
+        height: 500px;
+        text-align: center;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "af1 af2"
+        "af3 fg"
+        ;
+    }
+
+    #art-foot1{
+        grid-area: af1;
+        background-color: antiquewhite;
+    }
+
+    #art-foot2{
+        background-color: blue;
+        grid-area: af2;
+    }
+
+    #art-foot3{
+        grid-area: af3;
+        background-color: blueviolet;
+    }
+
+    #footer-grid{
+        grid-area: fg;
+        background-color: aquamarine;
+    }
+
+    #pair1{
+        display: flex;
+    }
+
+    #pair2{
+        display: flex;
+    }
+
+    #disapear-line{
+        width: 0;
+    }
+
+    .venue{
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    #items-premis{
+        display: flex;
+        flex-direction: column;
     }
 
 }
