@@ -92,11 +92,22 @@ header{
 
 .line{
     background: #485a27;
-    width: 90%;
     height: 3px;
-    position: relative;
-    left: 10px;
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.disapear-line{
+    background: #485a27;
+    height: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #allergy-article{
@@ -620,7 +631,11 @@ header{
 #flex-dop{
     display: flex;
     margin: 20px;
-    height: 325px;
+    height: 300px;
+}
+
+#dop-1 img{
+    height: 90%;
 }
 
 #he-dop{
@@ -639,7 +654,7 @@ header{
 
 #dop-2 img{
     width: 125px; 
-    margin-bottom: 22px;
+    margin-bottom: 27.5px;
 }
 
 #party-section{
@@ -872,13 +887,17 @@ header{
 
 }
 
+#stopping-img-section-again{
+    display: none;
+}
+
 @media screen and (min-width:600px){ 
 
     #main-page-media{
         display: grid;
         margin: 40px;
-        height: 450px;
-        grid-template-columns: 40% 30% 40%;
+        height: 400px;
+        grid-template-columns: 40% 25% 35%;
         grid-template-rows: 50% 40% 10%;
         grid-template-areas: 
         "pfsi mpc sis"
@@ -887,10 +906,22 @@ header{
         ;
     }
 
-    /* HELP IT DOESNT GIVE SIS THE GRID AREA*/
-    #stopping-img-section{
+    #stopping-img-section-again{
         grid-area: sis; 
-        background-color: aqua;
+        display: flex;
+        background-image: url(/img/regular/stopping-img.jpg);
+        height: 350px;
+        width: 300px;
+        padding: 40px;
+        margin-top: 25px;
+        margin-right: 20px;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #stopping-img-section{
+        display: none;
     }
 
     #main-page-cover{
@@ -944,11 +975,11 @@ header{
     .line{
         background: #485a27;
         height: 3px;
-        width: 95%;
-        position: relative;
-        left: 20px;
-        right: 20px;
-        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     #first-section-main-page{
@@ -988,14 +1019,14 @@ header{
     }
 
     #pair1{
-        display: flex;
+        display: flex; 
     }
 
     #pair2{
         display: flex;
     }
 
-    #disapear-line{
+    .disapear-line{
         width: 0;
     }
 
@@ -1023,4 +1054,52 @@ header{
         margin: 0;
         margin-top: 20px;
     }
+
+    #event-flex{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .desktop-event-flex{
+        width: 375px;
+        height: 350px;
+        background-color: rgb(252, 185, 196);
+        border-radius: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #flex-funeral{
+        height: 350px;
+        padding: 20px;
+    }
+
+    #flex-dop{
+        height: 350px;
+        padding-left: 20px;
+    }
+
+    #event-flex2{
+        display: flex;
+        justify-content: space-evenly;
+        height: 650px;
+    }
+
+    .desktop-event-flex2{
+        width: 375px;
+        margin: 20px;
+        height: 600px;
+        background-color: rgb(252, 185, 196);
+        border-radius: 10px;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #loan-section{
+        width: 375px;
+        height: 600px;
+        margin: 20px;
+    }
+
 }
