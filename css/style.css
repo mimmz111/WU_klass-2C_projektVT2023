@@ -984,6 +984,20 @@ header{
 
     #first-section-main-page{
         display: flex;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #taylor-article{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    #allergy-article{
+        width: 40%;
+        margin-top: 10px;
     }
 
     .footer{
@@ -1101,5 +1115,7 @@ header{
         height: 600px;
         margin: 20px;
     }
+
+    
 
 }
