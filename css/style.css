@@ -438,29 +438,6 @@ header{
     margin-left: 40px;
 }
 
-/*
-#offer-line1{
-
-    background: #485a27;
-    width: 5px;
-    height: 3px;
-    position: absolute;
-    left: 130px ;
-    bottom: -400px ;
-}
-
-#offer-line2{
-
-    background: #485a27;
-    width: 30%;
-    height: 3px;
-    position: absolute;
-    left: -25px ;
-    top: 9px ;
-}
-*/
-
-
 .book-button{
     height: 50px;
     width: 150px;
@@ -973,7 +950,11 @@ header{
     display: none;
 }
 
-@media screen and (min-width:600px){ 
+#disapearing-table{
+    width: 0;
+}
+
+@media screen and (min-width:700px){ 
 
     #main-page-media{
         display: grid;
@@ -1198,6 +1179,33 @@ header{
         margin: 20px;
     }
 
-    
+    #side-to-side-section{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        align-items: center;
+    }
+
+    #meals-grid{
+        width: 600px;
+    }
+
+    #section-office-meals{
+        width: 700px;
+    }
+
+    #taylor-article{
+        width: 600px;
+    }
+
+    #allergy-article{
+        width: 600px;
+    }
+
+    #disapearing-table{
+        width: 560px;
+        margin-top: 20px;
+        height: auto;
+    }
 
 }
