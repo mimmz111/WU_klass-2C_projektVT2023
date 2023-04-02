@@ -147,14 +147,14 @@ header{
 
 #link-list a{
     text-decoration: none;
-    color: rgb(84, 118, 174);
+    color: rgb(232, 166, 177);
     letter-spacing: 0.1875rem;
 }
 
 #burger div{
     width: 29px;
     height: 4px;
-    background-color: cadetblue;
+    background-color: rgb(253, 209, 216);
     margin: 5px;
     border-radius: 20%;
     transition: all 0.5s;
@@ -209,6 +209,7 @@ header{
     flex-direction: column;
     text-align: center;
 }
+
 
 #italien-section{
     display: grid;
@@ -302,8 +303,6 @@ header{
     margin-left: 20px;
 }
 
-
-
 #we-offer{
     grid-area: wo;
     font-size: 20px;
@@ -313,22 +312,10 @@ header{
     background-color: beige;
 }
 
-#list1-viet{
-    grid-area: l1;
-    list-style: none;
-    text-align: end;
-    background-color: cadetblue;
-}
 
-#list2-viet{
-    grid-area: l2;
-    list-style: none;
-    text-align: start;
-    background-color: chocolate;
-}
 
 #japanese-menu{
-    margin: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -384,6 +371,7 @@ header{
 }
 
 #allergy-head{
+    margin-top: 50px;
     grid-area: ah;
     text-align: center;
 }
@@ -911,7 +899,7 @@ header{
 
     #main-page-media{
         display: grid;
-        margin: 40px;
+        margin: 20px;
         height: 400px;
         grid-template-columns: 40% 25% 35%;
         grid-template-rows: 50% 40% 10%;
@@ -1018,7 +1006,7 @@ header{
 
     .footer{
         display: grid;
-        height: 500px;
+        height: 200px;
         text-align: center;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -1030,22 +1018,18 @@ header{
 
     #art-foot1{
         grid-area: af1;
-        background-color: antiquewhite;
     }
 
     #art-foot2{
-        background-color: blue;
         grid-area: af2;
     }
 
     #art-foot3{
-        grid-area: af3;
-        background-color: blueviolet;
+        grid-area: af3; 
     }
 
     #art-foot4{
         grid-area: ahh;
-        background-color: aquamarine;
     }
 
     #pair1{
@@ -1070,13 +1054,13 @@ header{
         flex-direction: column;
     }
 
-    #flex-starting-section{
+    .starting-section{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .starting-section{
+    #width-menu{
         width: 400px;
     }
 
@@ -1168,14 +1152,19 @@ header{
         width: 500px;
         background-color: rgb(255, 219, 225);
         padding: 20px;
+        
+        
     }
 
     #japanese-menu{
         grid-area: jm;
+        margin: 0;
+        
     }
 
     #mexican-section{
         grid-area: ms;
+        margin: 0;
     }
 
     #mexican-section img{
@@ -1184,26 +1173,42 @@ header{
 
     #french-menu{
         grid-area: fs;
+        margin: 0;
     }
 
     #italien-section{
         grid-area: is;
+        margin: 0;
     }
 
     #grid-menu{
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+        grid-template-columns:10% 50% 50% 10%;
+        grid-template-rows: 2% 50% 50%;
         grid-template-areas: 
-        "is fs"
-        "ms jm"
+        ". is fs. "
+        ". . . ."
+        ". ms jm. "
         ;
+        padding: 25px;
     }
 
     #last-section-menu{
-        width: 400px;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    .squares-menu{
+        width: 400px;
+    }
+
+    #disapear-headline{
+        display: none;
+    }
+
+    #allergy-head{
+        margin-top: 40px;
     }
 }
