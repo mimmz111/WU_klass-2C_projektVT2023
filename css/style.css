@@ -302,45 +302,7 @@ header{
     margin-left: 20px;
 }
 
-#vietnames-menu{
-    display: grid;
-    margin: 10px;
-    margin-bottom: 10px;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 10% 70% 10% 10%;
-    grid-template-areas: 
-    "hv hv hv"
-    "et tv tr"
-    ". wo ."
-    "l1 . l2"
-    ;
-}
 
-#headline-viet{
-    grid-area: hv;
-    text-align: center;
-    margin-bottom: 5px;
-    background-color: aqua;
-}
-
-#img1-viet{
-    grid-area: et;
-    height: 40%;
-    justify-self: center;
-    background-color: blueviolet;
-}
-
-#img2-viet{
-    grid-area: tv;
-    height: 40%;
-    justify-self: center;
-}
-
-#img3-viet{
-    grid-area: tr;
-    height: 40%;
-    justify-self: center;
-}
 
 #we-offer{
     grid-area: wo;
@@ -423,7 +385,6 @@ header{
 
 #allergy-head{
     grid-area: ah;
-    margin-top: 50px;
     text-align: center;
 }
 
@@ -453,20 +414,14 @@ header{
 }
 
 #section-office-meals{
-    height: 375px;
-    margin: 20px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 0.5fr 5fr;
-    grid-template-areas: 
-    "mp ho"
-    "pm in"
-    ;
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
-#meals-parent{
-    grid-area: mp;
-    text-align: center;
+#part1{
+    width: 50%;
 }
 
 #image-place{
@@ -484,14 +439,11 @@ header{
 }
 
 #head-office{
-    grid-area: ho;
     justify-self: center;
     align-self: center;
 }
 
 #welcome-text{
-    grid-area: pm;
-    width: 200px;
     text-align: center;
     margin-top: 10px;
     display: flex;
@@ -507,7 +459,8 @@ header{
 }
 
 #info{
-    grid-area: in;
+    margin-top: 10px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1071,7 +1024,7 @@ header{
         grid-template-rows: 50% 50%;
         grid-template-areas: 
         "af1 af2"
-        "af3 af4"
+        "ahh af3"
         ;
     }
 
@@ -1091,7 +1044,7 @@ header{
     }
 
     #art-foot4{
-        grid-area: af4;
+        grid-area: ahh;
         background-color: aquamarine;
     }
 
@@ -1191,7 +1144,9 @@ header{
     }
 
     #section-office-meals{
-        width: 700px;
+        width: 1500px;
+        height: 600px;
+        display: flex;
     }
 
     #taylor-article{
@@ -1208,4 +1163,47 @@ header{
         height: auto;
     }
 
+    .menu-looks{
+        height: 400px;
+        width: 500px;
+        background-color: rgb(255, 219, 225);
+        padding: 20px;
+    }
+
+    #japanese-menu{
+        grid-area: jm;
+    }
+
+    #mexican-section{
+        grid-area: ms;
+    }
+
+    #mexican-section img{
+        height: 30%;
+    }
+
+    #french-menu{
+        grid-area: fs;
+    }
+
+    #italien-section{
+        grid-area: is;
+    }
+
+    #grid-menu{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "is fs"
+        "ms jm"
+        ;
+    }
+
+    #last-section-menu{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
