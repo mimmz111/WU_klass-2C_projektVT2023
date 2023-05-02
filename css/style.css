@@ -782,7 +782,7 @@ header{
 }
 
 #text-venue1{
-    background-image: url(/img/regular/venue1.jpg);
+    background-image: url("img/regular/venue1.jpg");
 }
 
 .collection{
@@ -807,23 +807,23 @@ header{
 }
 
 #text-venue2{
-    background-image: url(/img/regular/venue2.jpg);
+    background-image: url("img/regular/venue2.jpg");
 }
 
 #text-venue3{
-    background-image: url(/img/regular/venue3.jpg);
+    background-image: url("img/regular/venue3.jpg");
 }
 
 #text-venue4{
-    background-image: url(/img/regular/venue4.jpg);
+    background-image: url("img/regular/venue4.jpg");
 }
 
 #text-venue5{
-    background-image: url(/img/regular/venue5.jpg);
+    background-image: url("img/regular/venue5.jpg");
 }
 
 #text-venue6{
-    background-image: url(/img/regular/venue6.jpg);
+    background-image: url("img/regular/venue6.jpg");
 }
 
 .footer{
