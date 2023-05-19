@@ -904,7 +904,7 @@ header{
         display: grid;
         margin: 20px;
         height: 500px;
-        grid-template-columns: 45% 25% 30%;
+        grid-template-columns: 35% 30% 35%;
         grid-template-rows: 50% 40% 10%;
         grid-template-areas: 
         "pfsi mpc sis"
@@ -958,6 +958,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
 
@@ -969,7 +970,7 @@ header{
     #listerner-right{
         height: 25px;
         width: 25px;
-        left: 475px;
+        right: 20px;
         top: 160px;
     }
 
