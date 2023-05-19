@@ -46,11 +46,8 @@ header{
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
-    position: relative;
-}
-
-#slide_img{
     width: 100%;
+    position: relative;
 }
 
 #listerner-right{
@@ -541,6 +538,7 @@ header{
 
 #booking-text{
     grid-area: bot;
+    width: 80%;
     text-align: center;
     margin-left: 20px;
 }
@@ -905,8 +903,8 @@ header{
     #main-page-media{
         display: grid;
         margin: 20px;
-        height: 450px;
-        grid-template-columns: 40% 25% 35%;
+        height: 500px;
+        grid-template-columns: 45% 25% 30%;
         grid-template-rows: 50% 40% 10%;
         grid-template-areas: 
         "pfsi mpc sis"
@@ -920,7 +918,6 @@ header{
         display: flex;
         background-image: url(/img/regular/stopping-img.jpg);
         height: 350px;
-        width: 300px;
         padding: 40px;
         margin-top: 25px;
         margin-right: 20px;
@@ -939,6 +936,7 @@ header{
 
     #place-for-sliding-img{
         grid-area: pfsi;
+        height: 350px;
     }
 
     #first-book-button{
@@ -956,9 +954,16 @@ header{
         grid-area: stb;
     }
 
+    #meals-grid-parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     #slide_img{
         height: 350px;
-        width: auto;
+        width: 100%;
     }
 
     #listerner-right{
@@ -1124,6 +1129,7 @@ header{
     #side-to-side-section{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 0;
         align-items: center;
     }
@@ -1135,6 +1141,7 @@ header{
     #section-office-meals{
         width: 1500px;
         height: 600px;
+        margin-top: 60px;
         display: flex;
     }
 
