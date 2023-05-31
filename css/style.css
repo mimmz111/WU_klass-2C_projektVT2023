@@ -636,7 +636,7 @@ header{
 #flex-dop{
     display: flex;
     margin: 20px;
-    height: 300px;
+    height: 350px;
 }
 
 #dop-1 img{
@@ -685,12 +685,16 @@ header{
 }
 
 #loan-section{
-    height: 500px;
+    height: 550px;
     margin: 40px;
     background-image: url(/img/regular/waiters-background-img.jpg);
     width: auto;
     background-size: cover;
     background-position: center;
+}
+
+#not-left{
+    text-align: left;
 }
 
 #loan-section img{
@@ -900,6 +904,15 @@ header{
 
 #disapearing-table{
     width: 0;
+}
+
+#left-mobil{
+    text-align: left;
+}
+
+.venue-left{
+    text-align: left;
+    margin-left: 10px;
 }
 
 @media screen and (min-width:760px){ 
