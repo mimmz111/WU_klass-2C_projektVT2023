@@ -66,12 +66,13 @@ header{
 #taylor-article{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 0.2fr 2fr;
     grid-template-areas: 
     "the the"
     "tte tim"
     ;
 }
+
 
 #taylor-text{
     grid-area: the;
@@ -85,7 +86,7 @@ header{
 }
 
 #taylor-article img{
-    height: 100px;
+    height: 125px;
     margin-right: 20px;
     margin-left: 20px;
     grid-area: tim;
@@ -122,7 +123,7 @@ header{
 }
 
 #allergy-article img{
-    height: 100px;
+    height: 125px;
     grid-area: im;
     margin-left: 20px;
     margin-right: 20px;
@@ -281,7 +282,8 @@ header{
     grid-area: fr;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin-top: 5px;
 }
 
 #ve{
@@ -331,6 +333,10 @@ header{
 
 #japanese-flex img{
     margin-left: 20px;
+}
+
+#move-up{
+    margin-bottom: 30px;
 }
 
 #japanese-list{
@@ -416,7 +422,7 @@ header{
 
 #image-place{
     margin-top: 15px;
-    height: 100px;
+    height: 150px;
     width: auto;
 }
 
@@ -660,8 +666,9 @@ header{
 }
 
 #dop-2 img{
-    width: 75%; 
-    margin-bottom: 27.5px;
+    width: 60%; 
+    height: 150px;
+    margin-bottom: 45px;
 }
 
 #party-section{
@@ -1225,11 +1232,13 @@ header{
         display: grid;
         height: 900px;
         grid-template-columns:10% 40% 40% 10%;
-        grid-template-rows: 2% 50% 50%;
+        grid-template-rows: 2% 50% 2% 50% 2%;
         grid-template-areas: 
+        ". . . ."
         ". is fs ."
         ". . . ."
         ". ms jm ."
+        ". . . ."
         ;
     }
 
