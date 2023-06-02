@@ -601,6 +601,9 @@ header{
 
 #head-wed{
     grid-area: hw;
+    margin-top: 15px;
+    text-align: left;
+    width: 150px;
 }
 
 #wed-img{
@@ -610,7 +613,7 @@ header{
 
 #wed-txt{
     grid-area: wt;
-    text-align: left;
+    margin-bottom: 120px;
 }
 
 #flex-funeral{
@@ -621,6 +624,7 @@ header{
 
 #flex-funeral p{
     margin-right: 5px;
+    margin-bottom: 20px;
 }
 
 #short-church{
@@ -651,7 +655,8 @@ header{
 }
 
 #he-dop{
-    text-align: center;
+    text-align: left;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -676,15 +681,17 @@ header{
 }
 
 #head-party{
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 #party-section p{
     margin-left: 20px;
     margin-right: 20px;
     text-align: left;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 #party-section img{
@@ -714,7 +721,11 @@ header{
 
 #loan-art-1{
     text-align: left;
-    padding: 40px;
+    padding-top: 5px;
+}
+
+#loan-art-1 p{
+    margin-bottom: 125px;
 }
 
 #loan-art-2{
@@ -745,7 +756,6 @@ header{
     margin: 20px;
     height: 600px;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     text-align: left;
 }
@@ -753,6 +763,15 @@ header{
 #flex-waiters img{
     height: auto;
     width: 40%;
+}
+
+#head-up-1{
+    margin-top: 5px;
+}
+
+#party-txt-1{
+    margin-top: 0;
+    margin-bottom: -20px;
 }
 
 #wine-img{
